@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&family=Poppins&family=Sacramento&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --background-color: #fff;
+    --background-color-variant: rgba(255,255,255,0.);
+    --first-color: hsl(203, 71%, 60%);
+    --second-color: hsl(277, 56%, 68%);
+    --third-color: rgba(0, 0 , 0, .3);
+    --text-color: hsl(203, 8% ,80%);
+    --text-dark: #232323;
+    --text-color-light: hsl(203, 8%, 80%);
+    --body-color: hsl(259, 20%, 18%);
+    /* --body-color: #252525; */
+    --transition: all 400ms ease;
+    --container-width-lg: 50%;
+    --container-width-md: 86%;
+    --container-width-sm: 90%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-dark);
+    line-height: 1.7;
+}
+
+
+/* ======================== general style ======================== */
+.container{
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+
+h1,h2,h3,h4,h5{
+    font-weight: 500;
+}
+
+h1{
+    font-size: 2.5rem;
+    background: linear-gradient(90deg, var(--second-color) 30%, var(--first-color) 70%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+section{
+    margin-top: 3rem;
+}
+
+section > h2, section > h5{
+    text-align: center;
+    color: var(--text-color-light)
+}
+
+section > h2{
+    background: linear-gradient(90deg, var(--second-color) 30%, var(--first-color) 70%);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 3rem;
+}
+
+.text-light{
+    color: var(--text-color-light);
+}
+
+a{
+    color: var(--first-color);  
+    transition: var(--transition);
+}
+
+a:hover{
+    color: var(--text-color-light);
+}
+
+.btn{
+    width: 8rem;
+    display: inline-block;
+    padding: .75rem 1.2rem;
+    /* border-radius: .4rem; */
+    background: var(--background-color);
+    border: none;
+    transition: var(--transition);
+    cursor: pointer;
+    color: var(--third-color);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: .3rem;
+}
+
+
+.btn:hover{
+    /* background: linear-gradient(90deg, var(--second-color) 30%, var(--first-color) 70%); */
+    /* color: transparent; */
+    /* border-color: transparent; */
+}
+
+.btn-primary{
+    background: var(--first-color);
+    color: var(--background-color);
+    /* background: rgba(0, 0 , 0, .3) ;
+    backdrop-filter: blur(15px); */
+    border: solid 1px transparent;
+    background: linear-gradient(90deg, var(--second-color) 30%, var(--first-color) 70%);
+    -webkit-background-clip: text;
+    color: transparent;
+    border-image: linear-gradient(90deg, var(--second-color) 30%, var(--first-color) 70%);
+    border-image-slice: 1;
+    
+}
+
+.active{
+    background: var(--first-color);
+    color: var(--background-color);
+}
+
+img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+
+
+
+
+/* ======================== code  ======================== */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 1rem 0;
+    font-family: 'Oleo Script', cursive;
+    font-size: 2rem;
+}
+
+.list__container{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.bottom-navigation__container{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 450px;
+}
+.bottom-navigation__container .nav-list__container{
+    background: var(--background-color);
+    display: flex;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 3.5rem;
+    height: 4rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.nav-list__container box-icon{
+    cursor: pointer;
+}
+
+
+.card__container{
+    display: flex;
+}
+
+.title{
+    /* margin-left: 1rem; */
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+
+.card{
+    position: relative;
+    border-radius: .75rem;
+    height: 230px!important;
+    width: 180px!important;
+    /* background: var(--third-color); */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.story__image{
+    height: 100%;
+}
+
+.story__image img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+.username__container{
+    position: absolute;
+    bottom: .5rem;
+    left: .5rem;
+    color: var(--background-color);
+}
+
+
+
+.button__container{
+    display: flex;
+    gap: 1rem!important;
+    justify-content: center;
+}
+
+.btn-switch__container{
+    display: flex;
+    gap: .5rem;
+}
+
+.add__btn{
+    border: none!important;
+    background: transparent!important;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.add__btn:hover{
+    transform: scaleY(.7);
+}
+
+
+.image__container img{
+    height: 500px;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.post__container{
+    margin-top: 2rem;
+    margin-bottom: 7rem;
+}
+
+.post__card{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.avatar{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.avatar img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+}
+
+.post__container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.react__container{
+    display: flex;
+    gap: .5rem;
+}
+
+
+
+/* ======================== tablets ======================== */
+@media screen and (max-width: 1024px){
+    .container{
+        width: var(--container-width-md);
+    }
+
+    section{
+        margin-top: 3rem;
+    }
+
+    .image__container img{
+        height: 300px;
+        object-fit: cover;
+        border-radius: 1rem;
+    }
+
+    /* .bottom-navigation__container{
+        width: 50%;
+    } */
+}
+
+/* ======================== small-devices ======================== */
+@media screen and (max-width: 600px){
+    .container{
+        width: var(--container-width-sm);
+    }
+
+    section > h2{
+        margin-bottom: 2rem;
+    }
+
+    .image__container img{
+        height: 200px;
+        object-fit: cover;
+        border-radius: 1rem;
+    }
+
+}

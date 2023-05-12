@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <title>Home page</title>
+  </head>
+  <body>
+    <nav class="navbar container">
+      <div>
+        Stulify
+      </div>
+      <div class="list__container">
+        <box-icon type='solid' name='bell'></box-icon>
+        <box-icon name='moon' type='solid' ></box-icon>
+        <box-icon name='user-circle' type='solid' ></box-icon>
+      </div>
+    </nav>
+
+    <section class="story__container container">
+      <p class="title">stories</p>
+            <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper card__container">
+          <!-- <div class="swiper-slide card">
+            <div class="story__image"><img src="https://i.kym-cdn.com/photos/images/newsfeed/000/684/619/36c.jpg" alt=""></div>
+            <div>Text</div>
+          </div>
+          <div class="swiper-slide card">
+            <div><img src="" alt=""></div>
+            <div>Text</div>
+          </div>
+          <div class="swiper-slide card">
+            <div><img src="" alt=""></div>
+            <div>Text</div>
+          </div>
+          <div class="swiper-slide card">
+            <div><img src="" alt=""></div>
+            <div>Text</div>
+          </div> -->
+        </div>
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </section>
+
+    <section id="post__section">
+        <div class="button__container container">
+
+          <button class="add__btn"><box-icon name='add-to-queue' type='solid' ></box-icon></button>
+          <div class="btn-switch__container">
+            <button class="btn active">Post</button>
+            <button class="btn">Discover</button>
+          </div>
+
+      </div>
+      <div class="post__container container">
+        
+        <article class="post__card">
+          <div class="avatar">
+            <img src="https://play-lh.googleusercontent.com/Pjvk4W0vdSTHHtPsHFRfFpBaM4-TgsUAO_9buZ3jRAc3v3KVLs3umPv5Jq8eJuJjreg" alt="">
+            <p>name</p>
+          </div>
+          <div class="image__container">
+            <img src="https://lzd-img-global.slatic.net/g/p/35417b826e06e3f9e00740517fccab19.jpg_720x720q80.jpg" alt="">
+          </div>
+          <div class="caption">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iusto corrupti debitis perspiciatis consequuntur quod.
+          </div>
+          <div class="react__container">
+            <box-icon class="heart liked" name='heart' type="" ></box-icon>
+            <p>128 likes</p>
+          </div>
+        </article>
+
+        <article class="post__card">
+          <div class="avatar">
+            <img src="https://play-lh.googleusercontent.com/Pjvk4W0vdSTHHtPsHFRfFpBaM4-TgsUAO_9buZ3jRAc3v3KVLs3umPv5Jq8eJuJjreg" alt="">
+            <p>name</p>
+          </div>
+          <div class="image__container">
+            <img src="https://lzd-img-global.slatic.net/g/p/35417b826e06e3f9e00740517fccab19.jpg_720x720q80.jpg" alt="">
+          </div>
+          <div class="caption">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iusto corrupti debitis perspiciatis consequuntur quod.
+          </div>
+          <div class="react__container">
+            <box-icon class="heart liked" name='heart' type="" ></box-icon>
+            <p>128 likes</p>
+          </div>
+        </article>
+      </div>
+      <nav class="bottom-navigation__container container">
+        <div class="nav-list__container">
+          <box-icon name='home' type='solid' ></box-icon>
+          <box-icon name='chat' type='solid' ></box-icon>
+          <box-icon name='user-rectangle' type='solid' ></box-icon>
+          <box-icon name='joystick' type='solid' ></box-icon>
+          <box-icon name='shopping-bag' ></box-icon>
+        </div>
+      </nav>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
