@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#97DEFF',
+              light: '#CBEFFF',
+              dark_blue: '#44A4E9'
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body>
+ 
+    <div class="md:w-[86%] relative md:mx-auto lg:w-1/2 flex flex-col gap-4 w-screen overflow-hidden">
+        <div class="bg-primary w-screen h-1/2 block absolute -top-[35%] md:-left-10 lg:right-0 md:-top-[45%] lg:-top-[60%] z-0 -rotate-[18deg] rounded-xl">d</div>
+        <nav class="flex items-center p-2 z-10 w-full">
+            <i onclick="history.back()" class='bx bx-chevron-left text-4xl text-white'></i>
+            <p class="w-full text-center text-white text-bold">My profile</p>
+        </nav>
+        <div class="text-sm m-auto flex flex-col gap-2 mt-8 z-10">
+            <img class="w-16 rounded-full aspect-square shadow-[0_3px_10px_rgb(0,0,0,0.2)]" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToHajOXrF9g0n4MZU-sI8YFozR6yJDsfH1AA&usqp=CAU" alt="">
+            <p class="font-extrabold">John Doe</p>
+        </div>
+        <div class="flex flex-col text-sm gap-2 mx-4">
+            <article class="flex gap-2 items-center">
+                <i class='bx bx-male-sign shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] p-2 rounded-full' ></i>
+                <p>Male</p>
+            </article>
+            <article class="flex gap-2 items-center">
+                <i class='bx bxs-phone shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] p-2 rounded-full' ></i>
+                <p>+855 12431438432</p>
+            </article>
+            <article class="flex gap-2 items-center">
+                <i class='bx bxs-envelope shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] p-2 rounded-full' ></i>
+                <p>JohnDoe@gmail.com</p>
+            </article>
+            <article class="flex gap-2 items-center">
+                <i class='bx bxs-calendar-alt shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] p-2 rounded-full' ></i>
+                <p>01/01/1998</p>
+            </article>
+            <button onclick="window.location.href='./edit.html'" class="bg-primary text-slate-100 p-2 mt-4">Edit Profile Info</button>
+        </div>
+        <div class="text-sm flex flex-col gap-2 mx-4">
+            <article onclick="window.location.href='./about.html'"  class="flex gap-2 items-center shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] p-2"><i class='bx bxs-user' ></i>About Us</article>
+            <article onclick="window.location.href='./terms.html'" class="flex gap-2 items-center shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] p-2"><i class='bx bxs-terminal' ></i>Term & Conditions</article>
+            <article onclick="window.location.href='./privacy&policy.html'" class="flex gap-2 items-center shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] p-2"><i class='bx bxs-user' ></i>Primary & Privacy</article>
+            <article onclick="window.location.href='./setting.html'" class="flex gap-2 items-center shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] p-2"><i class='bx bx-cog' ></i>Setting</article>
+        </div>
+        <a onclick="window.location.href='./login.html'" class="m-auto rounded-lg bg-primary flex items-center justify-center gap-2 text-slate-100 p-2 text-sm text-center w-32"><i class='bx bx-log-out text-slate-100' ></i>Sign Out</a>
+    </div>
+    
+</body>
+</html>

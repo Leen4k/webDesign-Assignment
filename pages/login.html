@@ -5,8 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#97DEFF',
+              light: '#CBEFFF',
+              dark_blue: '#44A4E9'
+            }
+          }
+        }
+      }
+    </script>
   </head>
   <body>
-    This is login page
+    <section class="md:w-[86%] mx-4 md:mx-auto lg:w-[40%]">
+      <h1 class="text-4xl font-bold text-primary text-center">Stulify</h1>
+      <div class="flex my-8">
+        <button class="flex-1 p-2">Sign In</button>
+        <button class="flex-1 p-2 border-b border-primary text-primary">Sign Up</button>
+      </div>
+      <form class="flex flex-col gap-4 mt-4 text-sm" action="">
+        <input class="p-2 text-sm shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]" type="email" placeholder="email">
+        <input class="p-2 text-sm shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]" type="password" placeholder="password">
+        <p class="text-right text-sm text-slate-400">forget password?</p>
+        <a onclick="window.location.href='../home.html'" class="bg-primary text-center text-slate-100 p-2">sign in</a>
+      </form>
+      <div class="flex flex-col gap-2 mt-12 text-sm">
+        <button class="flex p-2 bg-dark_blue justify-center items-center text-slate-100"><i class='bx bxl-facebook-circle'></i><p class="flex-1">Sign In with facebook</p></button>
+        <button class="flex p-2 border-b items-center"><i class='bx bxl-google' ></i><span class="flex-1">Sign In with google</span></button>
+      </div>
+    </section>
+    <script>
+      
+    </script>
   </body>
 </html>

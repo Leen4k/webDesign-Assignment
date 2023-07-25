@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <title>Home page</title>
+  </head>
+  <body>
+    <nav class="navbar container">
+      <div>
+        Stulify
+      </div>
+      <div class="list__container">
+        <box-icon class="cursor-pointer" onclick="window.location.href='./setting.html'" type='solid' name='bell'></box-icon>
+        <box-icon class="cursor-pointer" name='moon' type='solid' ></box-icon>
+        <box-icon class="cursor-pointer" onclick="window.location.href='./profile.html'" name='user-circle' type='solid' ></box-icon>
+      </div>
+    </nav>
+
+    <section class="story__container container">
+      <p class="title">Department</p>
+            <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper card__container">
+          <!-- <div class="swiper-slide card">
+            <div class="story__image"><img src="https://i.kym-cdn.com/photos/images/newsfeed/000/684/619/36c.jpg" alt=""></div>
+            <div>Text</div>
+          </div>
+          <div class="swiper-slide card">
+            <div><img src="" alt=""></div>
+            <div>Text</div>
+          </div>
+          <div class="swiper-slide card">
+            <div><img src="" alt=""></div>
+            <div>Text</div>
+          </div>
+          <div class="swiper-slide card">
+            <div><img src="" alt=""></div>
+            <div>Text</div>
+          </div> -->
+        </div>
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </section>
+
+    <section id="post__section">
+        <div class="button__container container">
+
+          <button class="add__btn"><box-icon name='add-to-queue' type='solid' ></box-icon></button>
+          <div class="btn-switch__container">
+            <button onclick="window.location.href='../home.html'" class="btn">Post</button>
+            <button class="btn active">Department</button>
+          </div>
+
+      </div>
+      <div class="post__container container">
+        
+        <article class="post__card">
+          <div class="avatar">
+            <img class="object-contain" src="data:image/png;base64,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" alt="">
+            <p>GIC</p>
+          </div>
+          <div class="image__container">
+            <img src="https://static1.straitstimes.com.sg/s3fs-public/styles/large30x20/public/articles/2022/07/26/sv_gicoffice_260722.jpg?VersionId=EGYWeJCDtbwzCQSBm2TGEv9ZkaulS9wA" alt="">
+          </div>
+          <div class="caption">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iusto corrupti debitis perspiciatis consequuntur quod.
+          </div>
+          <div class="react__container">
+            <box-icon type='solid' name='star'></box-icon>
+            <box-icon type='solid' name='star'></box-icon>
+            <box-icon type='solid' name='star'></box-icon>
+            <box-icon type='solid' name='star'></box-icon>
+            <box-icon type='solid' name='star'></box-icon>
+            <p>128 stars</p>
+          </div>
+        </article>
+
+        <article class="post__card">
+            <div class="avatar">
+              <img class="object-contain" src="data:image/png;base64,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" alt="">
+              <p>GIC</p>
+            </div>
+            <div class="image__container">
+              <img src="https://static1.straitstimes.com.sg/s3fs-public/styles/large30x20/public/articles/2022/07/26/sv_gicoffice_260722.jpg?VersionId=EGYWeJCDtbwzCQSBm2TGEv9ZkaulS9wA" alt="">
+            </div>
+            <div class="caption">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iusto corrupti debitis perspiciatis consequuntur quod.
+            </div>
+            <div class="react__container">
+              <box-icon type='solid' name='star'></box-icon>
+              <box-icon type='solid' name='star'></box-icon>
+              <box-icon type='solid' name='star'></box-icon>
+              <box-icon type='solid' name='star'></box-icon>
+              <box-icon type='solid' name='star'></box-icon>
+              <p>128 stars</p>
+            </div>
+          </article>
+      </div>
+      <nav class="bottom-navigation__container container">
+        <div class="nav-list__container">
+          <box-icon onclick="window.location.href='#'" name='home' type='solid' class="home-btn underline" ></box-icon>
+          <box-icon onclick="window.location.href='chatList.html'" name='chat' type='solid' ></box-icon>
+          <box-icon onclick="window.location.href='friends.html'" name='user-rectangle' type='solid' ></box-icon>
+          <box-icon onclick="window.location.href='games.html'" name='joystick' type='solid' ></box-icon>
+          <box-icon onclick="window.location.href='market.html'" name='shopping-bag' ></box-icon>
+        </div>
+      </nav>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="../assets/js/index.js"></script>
+  </body>
+</html>

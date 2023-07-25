@@ -13,7 +13,7 @@
 :root{
     --background-color: #fff;
     --background-color-variant: rgba(255,255,255,0.);
-    --first-color: hsl(203, 71%, 60%);
+    --first-color: #97DEFF;
     --second-color: hsl(277, 56%, 68%);
     --third-color: rgba(0, 0 , 0, .3);
     --text-color: hsl(203, 8% ,80%);
@@ -40,6 +40,7 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color: var(--background-color);
     color: var(--text-dark);
+    transition: var(--transition);
     line-height: 1.7;
 }
 
@@ -55,9 +56,10 @@ h1,h2,h3,h4,h5{
 }
 
 h1{
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     background: linear-gradient(90deg, var(--second-color) 30%, var(--first-color) 70%);
     -webkit-background-clip: text;
+    font-family: 'Oleo Script', cursive;
     color: transparent;
 }
 
@@ -81,13 +83,29 @@ section > h2{
     color: var(--text-color-light);
 }
 
+i{
+    color: #97DEFF
+}
+
 a{
     color: var(--first-color);  
     transition: var(--transition);
+    cursor: pointer;
 }
 
 a:hover{
     color: var(--text-color-light);
+}
+
+button{
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+button:hover{
+    color: var(--text-color-light)!important;
+    transition: var(--transition);
+   
 }
 
 .btn{
@@ -128,6 +146,43 @@ a:hover{
 .active{
     background: var(--first-color);
     color: var(--background-color);
+}
+
+.underline {
+    text-decoration: none; 
+    position: relative; 
+  }   
+
+ .underline:after {
+     position: absolute;
+     content: '';
+     height: 3px;
+       /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
+     bottom: -4px; 
+
+
+    /****** 
+    optional values below 
+    ******/
+     
+     /* center - (optional) use with adjusting width   */
+     margin: 0 auto;
+       left: 0;
+     right: 0;
+       width: 60%;
+       background: var(--first-color);
+       
+       /* optional animation */
+       -o-transition:.5s;
+         -ms-transition:.5s;
+     -moz-transition:.5s;
+     -webkit-transition:.5s;
+     transition:.5s;
+ }
+
+ .underline:hover:after {
+    width: 100%;
+    background: black;
 }
 
 img{
@@ -180,6 +235,10 @@ img{
     cursor: pointer;
 }
 
+.home-btn{
+
+}
+
 
 .card__container{
     display: flex;
@@ -198,6 +257,15 @@ img{
     border-radius: .75rem;
     height: 230px!important;
     width: 180px!important;
+    /* background: var(--third-color); */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.book-card{
+    position: relative;
+    border-radius: .75rem;
+    height: 200px!important;
+    width: 320px!important;
     /* background: var(--third-color); */
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }

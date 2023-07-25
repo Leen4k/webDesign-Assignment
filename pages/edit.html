@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#97DEFF',
+              light: '#CBEFFF',
+              dark_blue: '#44A4E9'
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body>
+ 
+    <div class="md:w-[86%] mx-4 md:mx-auto lg:w-1/2 text-sm">
+        <nav class="flex items-center py-2 w-full">
+            <i onclick="history.back()" class='bx bx-chevron-left text-4xl text-left'></i>
+            <p class="w-full text-center text-bold">Edit Info</p>
+        </nav>
+        <section class="flex flex-col">
+            <form class="flex flex-col gap-4" action="">
+                <label for="">Name</label>
+                <input placeholder="nak" class="p-2 shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]" type="text">
+                <label for="">Phone Number</label>
+                <input placeholder="+85591283" class="p-2 shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]" type="text">
+                <label for="">Gender</label>
+                <input placeholder="gay" class="p-2 shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]" type="text">
+                <label for="">Email</label>
+                <input placeholder="n4k@gmail.com" class="p-2 shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]" type="text">
+                <label for="">Password</label>
+                <input placeholder="password" class="p-2 shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]" type="text">
+            </form>
+            <button onclick="history.back()" class="bg-primary text-slate-100 p-2 rounded-md w-full mt-12">Save</button>
+        </section>
+
+    </div>
+       
+    
+</body>
+</html>

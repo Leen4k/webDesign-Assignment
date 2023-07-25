@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <title>Home page</title>
   </head>
@@ -14,9 +15,9 @@
         Stulify
       </div>
       <div class="list__container">
-        <box-icon type='solid' name='bell'></box-icon>
-        <box-icon name='moon' type='solid' ></box-icon>
-        <box-icon name='user-circle' type='solid' ></box-icon>
+        <box-icon class="cursor-pointer" onclick="window.location.href='pages/notification.html'" type='solid' name='bell'></box-icon>
+        <box-icon class="cursor-pointer" name='moon' type='solid' ></box-icon>
+        <box-icon class="cursor-pointer" onclick="window.location.href='./pages/profile.html'" name='user-circle' type='solid' ></box-icon>
       </div>
     </nav>
 
@@ -52,7 +53,7 @@
           <button class="add__btn"><box-icon name='add-to-queue' type='solid' ></box-icon></button>
           <div class="btn-switch__container">
             <button class="btn active">Post</button>
-            <button class="btn">Discover</button>
+            <button onclick="window.location.href='./pages/department.html'" class="btn">Department</button>
           </div>
 
       </div>
@@ -94,11 +95,11 @@
       </div>
       <nav class="bottom-navigation__container container">
         <div class="nav-list__container">
-          <box-icon name='home' type='solid' ></box-icon>
-          <box-icon name='chat' type='solid' ></box-icon>
-          <box-icon name='user-rectangle' type='solid' ></box-icon>
-          <box-icon name='joystick' type='solid' ></box-icon>
-          <box-icon name='shopping-bag' ></box-icon>
+          <box-icon class="underline" onclick="window.location.href='#'" name='home' type='solid'></box-icon>
+          <box-icon onclick="window.location.href='./pages/chatList.html'" name='chat' type='solid' ></box-icon>
+          <box-icon onclick="window.location.href='./pages/friends.html'" name='user-rectangle' type='solid' ></box-icon>
+          <box-icon onclick="window.location.href='./pages/games.html'" name='joystick' type='solid' ></box-icon>
+          <box-icon onclick="window.location.href='./pages/market.html'" name='shopping-bag' ></box-icon>
         </div>
       </nav>
     </section>

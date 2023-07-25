@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#97DEFF',
+              light: '#CBEFFF',
+              dark_blue: '#44A4E9'
+            }
+          }
+        }
+      }
+    </script>
+    <title>Market page</title>
+  </head>
+  <body class="md:w-[86%] md:mx-auto lg:w-1/2 relative mx-4">
+    <nav class="navbar container">
+      <div>
+        Stulify
+      </div>
+      <div class="list__container">
+        <box-icon class="cursor-pointer" onclick="window.location.href='./notification.html'" type='solid' name='bell'></box-icon>
+        <box-icon class="cursor-pointer" name='moon' type='solid' ></box-icon>
+        <box-icon class="cursor-pointer" onclick="window.location.href='./profile.html'" name='user-circle' type='solid' ></box-icon>
+      </div>
+    </nav>
+
+    <section class="story__container container">
+      <div class="flex flex-col gap-0">
+        <p class="title">Books</p>
+        <p class="text-slate-500 text-sm mb-2 mt-4">popular</p>
+      </div>
+            <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper card__container">
+          <!-- <div class="swiper-slide card">
+            <div class="story__image"><img src="https://i.kym-cdn.com/photos/images/newsfeed/000/684/619/36c.jpg" alt=""></div>
+            <div>Text</div>
+          </div>
+          <div class="swiper-slide card">
+            <div><img src="" alt=""></div>
+            <div>Text</div>
+          </div>
+          <div class="swiper-slide card">
+            <div><img src="" alt=""></div>
+            <div>Text</div>
+          </div>
+          <div class="swiper-slide card">
+            <div><img src="" alt=""></div>
+            <div>Text</div>
+          </div> -->
+        </div>
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </section>
+
+    <section id="post__section">
+        <div class="button__container container">
+
+          <!-- <button class="add__btn"><box-icon name='add-to-queue' type='solid' ></box-icon></button> -->
+          <div class="btn-switch__container gap-0">
+            <div class="flex flex-col gap-1">
+                <button class="btn active rounded-none">8</button>
+                <p class="text-xs text-slate-400 text-center">ratings</p>
+            </div>
+            <div class="flex flex-col gap-1">
+                <button class="btn rounded-none">988</button>
+                <p class="text-xs text-slate-400 text-center">downloads</p>
+            </div>
+            <div class="flex flex-col gap-1">
+                <button class="btn rounded-none">3k</button>
+                <p class="text-xs text-slate-400 text-center">loved</p>
+            </div>
+          </div>
+
+      </div>
+      <div class="post__container container">
+        
+        <article class="post__card">
+          <div class="avatar flex">
+            <!-- <img src="https://play-lh.googleusercontent.com/Pjvk4W0vdSTHHtPsHFRfFpBaM4-TgsUAO_9buZ3jRAc3v3KVLs3umPv5Jq8eJuJjreg" alt=""> -->
+            <div class="flex flex-col flex-1">
+                <p class="flex-1">E books</p>
+                <span class="text-xs text-slate-400">Popular</span>
+            </div>
+            <button class="btn flex items-center justify-between gap-4 text-black">Filter<box-icon name='chevron-down'></box-icon></button>
+          </div>
+          <div class="rounded-3xl grid grid-cols-4 grid-rows-2 gap-2">
+            <img class="col-span-4 h-[200px] rounded-xl" src="https://images.pexels.com/photos/9066471/pexels-photo-9066471.jpeg?cs=srgb&dl=pexels-yulia-ilina-9066471.jpg&fm=jpg" alt=""> 
+            <img class="h-[200px] rounded-xl" src="https://img.freepik.com/free-photo/high-angle-floral-bookmark-book_23-2149894483.jpg" alt="">
+            <img class="h-[200px] rounded-xl" src="https://img.freepik.com/free-photo/high-angle-book-bookmark_23-2149871512.jpg" alt="">
+            <img class="h-[200px] rounded-xl" src="https://img.freepik.com/free-photo/high-angle-floral-bookmark-book_23-2149894483.jpg" alt="">
+            <img class="h-[200px] rounded-xl" src="https://img.freepik.com/free-photo/high-angle-book-bookmark_23-2149871512.jpg" alt="">
+          </div>
+        </article>
+
+        <article class="post__card">
+          <div class="avatar flex">
+            <div class="flex flex-col flex-1">
+                <p class="flex-1">Related</p>
+                <span class="text-xs text-slate-400">Popular</span>
+            </div>
+            <button class="btn flex items-center justify-between gap-4 text-black">Filter<box-icon name='chevron-down'></box-icon></button>
+          </div>
+          <div class="">
+            <img class="rounded-xl object-cover" src="https://img.freepik.com/free-photo/bookmark-books-arrangement-flat-lay_23-2149894336.jpg" alt="">
+          </div>
+      </div>
+      <nav class="bottom-navigation__container container w-[95%] md:w-[86%] md:mx-auto lg:w-[500px]">
+        <div class="nav-list__container">
+          <box-icon onclick="window.location.href='../home.html'" name='home' type='solid' class="home-btn" ></box-icon>
+          <box-icon onclick="window.location.href='./chatList.html'" name='chat' type='solid' ></box-icon>
+          <box-icon onclick="window.location.href='./friends.html'" name='user-rectangle' type='solid' ></box-icon>
+          <box-icon onclick="window.location.href='./games.html'" name='joystick' type='solid' ></box-icon>
+          <box-icon class="underline" onclick="window.location.href='./market.html'" name='shopping-bag' ></box-icon>
+        </div>
+      </nav>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script>
+
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 'auto',
+            spaceBetween: 20,
+            scrollbar: {
+            el: ".swiper-scrollbar",
+            hide: true,
+
+            // slidesPerView: 1,
+            },
+        });
+
+        const card =document.querySelector(".card__container");  
+        const post = document.querySelector(".post__container");
+        const books = [
+        {title:"book 1",img:"https://img.freepik.com/free-photo/top-view-bookmark-books-arrangement_23-2149894398.jpg"},
+        {title:"book 2",img:"https://wallpapers.com/images/hd/aesthetic-book-pictures-1500-x-1405-o94kqnjtjllart2z.jpg"},
+        {title:"book 3",img:"https://res.cloudinary.com/teepublic/image/private/s--EQk0RTAD--/t_Resized%20Artwork/c_fit,g_north_west,h_1054,w_1054/co_ffffff,e_outline:53/co_ffffff,e_outline:inner_fill:53/co_bbbbbb,e_outline:3:1000/c_mpad,g_center,h_1260,w_1260/b_rgb:eeeeee/c_limit,f_auto,h_313,q_auto:good:420,w_313/v1637706538/production/designs/25796677_0"},
+        {title:"book 4",img:"https://m.media-amazon.com/images/I/71hPoo9nVHL._AC_UF1000,1000_QL80_.jpg"}]
+
+        fetch('https://randomuser.me/api/?page=3&results=10&seed=abc')
+
+        .then(res=>(res.json()))
+
+        .then(book=>card.innerHTML = books.map((book)=>{
+
+                console.log(book)
+                const {title,img} = book;
+                return(`
+                <div class="swiper-slide book-card">
+                <div class="story__image"><img src=${img} alt=${title}></div>
+                <div class="username__container">${title}</div>
+            </div>
+                `)
+
+        }).join("")
+        )
+
+
+        .catch(error=>console.log(error))
+    </script>
+  </body>
+</html>

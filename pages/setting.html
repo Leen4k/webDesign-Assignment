@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#97DEFF',
+              light: '#CBEFFF',
+              dark_blue: '#44A4E9'
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body>
+ 
+    <div class="md:w-[86%] md:mx-auto lg:w-1/2 text-sm">
+        <nav class="flex items-center p-2 w-full bg-primary text-slate-100">
+            <i onclick="history.back()" class='bx bx-chevron-left text-4xl text-slate-100'></i>
+            <p class="w-full text-center text-bold">Setting</p>
+        </nav>
+        <div class="flex flex-col gap-4 mt-4">
+            <div onclick="window.location.href='language.html'" class="flex justify-between items-center p-4 gap-2 shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"><i class='bx bx-world text-xl' ></i><p class="flex-1">Choose Language</p><i class='bx bx-chevron-right text-3xl' ></i></div>
+            <div class="flex justify-between items-center p-4 gap-2 shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"><i class='bx bxs-bell text-xl' ></i><p class="flex-1">Notification</p><i class='bx bxs-toggle-right text-3xl' ></i></div>
+        </div>
+       
+    </div>
+       
+    
+</body>
+</html>

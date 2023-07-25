@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#97DEFF',
+              light: '#CBEFFF',
+              dark_blue: '#44A4E9',
+              light_bg: '#F7F7F7'
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body>
+ 
+    <div class="flex flex-col justify-between min-h-screen md:w-[86%] mx-4 md:mx-auto lg:w-1/2 text-sm">
+        <nav class="flex items-center py-2 w-full">
+            <a onclick="history.back()"><i class='bx bx-chevron-left text-4xl text-left'></i></a>
+            <p class="w-full text-center text-bold">Chat</p>
+        </nav>
+
+        <section class="flex flex-col gap-4 py-6 overflow-y-scroll text-xs">
+            <article class="flex gap-1">
+                <img class="w-8 h-8 rounded-full align" src="https://images.unsplash.com/photo-1611601147557-cdc89476ec4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGluayUyMGFlc3RoZXRpY3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" alt="">
+                <div class="flex flex-col gap-2">
+                    <div>
+                        <span class="text-bold text-xs px-2">roth</span>
+                        <span class="text-slate-400 text-xs">11:00AM</span>
+                    </div>
+                    <p class="bg-light_bg p-2 rounded-md">Nham bay nv?</p>
+                    <p class="bg-light_bg p-2 rounded-md">Nham bay nv?</p>
+                </div>
+            </article>
+            <article class="flex w-full justify-end items-start gap-2"> 
+                <div class="">
+                    <div class="flex justify-between">
+                        <span class="text-slate-400 text-xs">11:00AM</span>
+                        <span class="text-bold text-xs">You</span>
+                    </div>
+                    <p class="bg-light_bg p-2 mt-2 rounded-md">ot torn dek te?</p>
+                </div>           
+                <img class="w-8 h-8 mt-2 rounded-full align" src="https://images.unsplash.com/photo-1611601147557-cdc89476ec4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGluayUyMGFlc3RoZXRpY3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" alt="">          
+            </article>
+            <article class="flex gap-1">
+                <img class="w-8 h-8 rounded-full align" src="https://images.unsplash.com/photo-1611601147557-cdc89476ec4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGluayUyMGFlc3RoZXRpY3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" alt="">
+                <div class="flex flex-col gap-2">
+                    <div>
+                        <span class="text-bold text-xs px-2">roth</span>
+                        <span class="text-slate-400 text-xs">11:00AM</span>
+                    </div>
+                    <p class="bg-light_bg p-2 rounded-md">Nham bay nv?</p>
+                </div>
+            </article>
+            <article class="flex gap-1">
+                <img class="w-8 h-8 rounded-full align" src="https://images.unsplash.com/photo-1611601147557-cdc89476ec4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGluayUyMGFlc3RoZXRpY3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" alt="">
+                <div class="flex flex-col gap-2">
+                    <div>
+                        <span class="text-bold text-xs px-2">roth</span>
+                        <span class="text-slate-400 text-xs">11:00AM</span>
+                    </div>
+                    <p class="bg-light_bg p-2 rounded-md underline text-indigo-500">java_tutorials.io</p>
+                    <p class="bg-light_bg p-2 rounded-md">jes knit nv ng?</p>
+                    <p class="bg-light_bg p-2 rounded-md underline text-indigo-500">Math.org</p>
+                </div>
+            </article>
+            <article class="flex w-full justify-end items-start gap-2"> 
+                <div class="">
+                    <div class="flex justify-between">
+                        <span class="text-slate-400 text-xs">11:00AM</span>
+                        <span class="text-bold text-xs">You</span>
+                    </div>
+                    <p class="bg-light_bg p-2 mt-2 rounded-md">🥹🥹🥹🥹🥹🥹🥹</p>
+                </div>           
+                <img class="w-8 h-8 mt-2 rounded-full align" src="https://images.unsplash.com/photo-1611601147557-cdc89476ec4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGluayUyMGFlc3RoZXRpY3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" alt="">          
+            </article>
+        </section>
+
+        <div class="left-0 right-0 py-4 bg-[#fff]">
+            <div class="flex bg-slate-200 p-2 px-4 rounded-xl">
+                <input class=" bg-slate-200 basis-1/2" type="text" placeholder="Message">
+                <div class="justify-end basis-1/2 gap-4 items-center flex text-xl">
+                    <i class='bx bxs-camera'></i>
+                    <i class='bx bx-image-alt' ></i>
+                    <i class='bx bx-wink-smile' ></i>
+                    <i class='bx bxs-microphone' ></i>
+                    <i class='bx bx-navigation' ></i>
+                </div>
+            </div>
+        </div>
+
+    </div>
+       
+    
+</body>
+</html>
